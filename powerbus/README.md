@@ -4,6 +4,10 @@ A compact (50x200mm) 12-way power distribution PCB for Eurorack modular synthesi
 
 Can be built as a simple passive bus board with shrouded or unshrouded headers, using flat connectors / mounting tabs or .156" connectors for power input. Optional power indicator LEDs (highly recommended!) and onboard minimal +5V regulation from +12V rail may be added.
 
+![Plain PCB](http://vae.fi/moraydular/powerbus_raw.jpg)
+
+![Populated PCB](http://vae.fi/moraydular/powerbus_populated.jpg)
+
 ## Ordering and Building Notes ##
 
 The .dip file contains the PCB design in DipTrace format. The Gerber files are confirmed to pass checks for Seeedstudio, 5x20cm 2-layer PCB. They will probably work fine as-is for Itead, Tinysine, Elecrow and other prototype PCB services. Consider spending extra for 2+ oz copper traces for improved performance.
