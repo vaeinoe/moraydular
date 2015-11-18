@@ -12,7 +12,12 @@ Can be built as a simple passive bus board with shrouded or unshrouded headers, 
 
 The .dip file contains the PCB design in DipTrace format. The Gerber files are confirmed to pass checks for Seeedstudio, 5x20cm 2-layer PCB. They will probably work fine as-is for Itead, Tinysine, Elecrow and other prototype PCB services. Consider spending extra for 2+ oz copper traces for improved performance.
 
-Populating the PCB should be straightforward. The pads for all the connectors have quite wide thermal reliefs, so soldering them may require some extra heat and patience. When using mounting tabs, you may want to solder them on both sides for extra sturdiness because it usually takes some force to detach the cables.
+Populating the PCB should be relatively straightforward. Some notes: 
+
+ * The LED polarity follows standard convention: the short leg / cathode / notched side of LED goes where there's a notch in the silkscreen.
+ * The pads for connectors have quite wide thermal reliefs, so soldering them may require some extra heat and patience. In particular, the -12V (bottom row) pins in ribbon connectors will take some warming up for the solder to flow properly.
+ * When using mounting tabs, you may want to solder them on both sides for extra sturdiness because it usually takes some force to detach the cables.
+ * If not building the +5V adapter, leave out parts as indicated in BOM below
 
 When using onboard +5V in multiple bus board system, either build the regulator circuit for all boards and leave out +5V link cables *or* populate the regulator circuit for just one board and distribute +5V to all boards. **Never** link +5V rails of two boards together if they both already have their own +5V feeds.
 
