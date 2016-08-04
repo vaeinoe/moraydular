@@ -10,7 +10,7 @@ Can be built as a simple passive bus board with shrouded or unshrouded headers, 
 
 ## Ordering and Building Notes ##
 
-The .dip file contains the PCB design in DipTrace format. The Gerber files are confirmed to pass checks for Seeedstudio, 5x20cm 2-layer PCB. They will probably work fine as-is for Itead, Tinysine, Elecrow and other prototype PCB services. Consider spending extra for 2+ oz copper traces for improved performance.
+The file moraydular_powerbus.dip contains the PCB design in DipTrace format. The Gerber files are confirmed to pass checks for Seeedstudio, 5x20cm 2-layer PCB. They will probably work fine as-is for Itead, Tinysine, Elecrow and other prototype PCB services. Consider spending extra for 2+ oz copper traces for improved performance.
 
 Populating the PCB should be relatively straightforward. Some notes: 
 
@@ -40,3 +40,7 @@ For +5V onboard regulation add the following:
  * **2x** standard rectifier diodes, any of 1N4001...1N4007 will do
  * **1x** 10uF electrolytic capacitor, 16V or higher voltage rating
  * **1x** 100nF ceramic capacitor
+
+ # Wide Version #
+
+ Also included in the repository is a wide 14-way variant (moraydular_powerbus_wide) with roughly 50x380mm size, and .156 connector footprints on both ends. The functionality and design are otherwise essentially the same as with the normal narrow version. The parts list differs only by the two additional box headers / pin strips required. 
