@@ -4,6 +4,8 @@ A compact (50x250mm) combined linear halfwave power supply and 7-way power distr
 
 The maximum output current depends on the capacitance of the big reservoir capacitors, heatsinking of the regulators, and current rating of the external transformer. In any case, do not expect to get more than roughly 500mA of +-12V with any configuration - this is meant to be a simple and cheap supply for a couple of modules, not something for big systems. The +5V regulator draws power from the +12V rail so this has to be taken into consideration if your system uses a lot of +5V.
 
+![Populated PCB](http://vae.fi/moraydular/my_little_euro_v1.jpg)
+
 ## Ordering and Building Notes ##
 
 The file moraydular\_my\_little\_euro\_v1.dip contains the PCB design in DipTrace format. The Gerber files in gerber directory are for ordering a 5x25cm 2-layer PCB. I have successfully received prototypes from DirtyPCBs and the files should be fine as-is for other prototype PCB services like OSHPark, iTead or Seeed. Please specify 2 oz copper traces (or even thicker if you can get it for decent price).
