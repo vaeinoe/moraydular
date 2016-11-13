@@ -1,0 +1,21 @@
+G04 DipTrace 3.0.0.1*
+G04 moraydular_powerbus_powered_skiff.GKO*
+%MOMM*%
+G04 #@! TF.FileFunction,Profile*
+G04 #@! TF.Part,Single*
+%ADD11C,0.14*%
+%FSLAX35Y35*%
+G04*
+G71*
+G90*
+G75*
+G01*
+G04 BoardOutline*
+%LPD*%
+X1000001Y1000001D2*
+D11*
+X26000001D1*
+Y6000001D1*
+X1000001D1*
+Y1000001D1*
+M02*
